@@ -56,3 +56,10 @@ resource "aws_internet_gateway" "amandaweb" {
   
  # depends_on                = [aws_internet_gateway.id]
 #}
+
+
+
+
+
+
+TESTANDO 
