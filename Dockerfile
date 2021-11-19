@@ -2,9 +2,10 @@
 FROM ubuntu/nginx
 MAINTAINER amandahtmlteste
 RUN apt-get update 
-WORKDIR /amandahtml
-COPY . projetonovo/healthcheck.html/amandahtml       
-EXPOSE 80:8989
+WORKDIR usr/share/nginx/html
+COPY . projetonovo/healthcheck.html
+RUN apt-get update 
+EXPOSE 8080
 
 
 
