@@ -6,4 +6,3 @@ WORKDIR /amandahtml
 COPY  . oliveira.amanda/projetode_treinamento/healthcheck.html  /amandahtml
 EXPOSE 8989
 
-
