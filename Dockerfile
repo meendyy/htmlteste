@@ -3,7 +3,7 @@ FROM ubuntu/nginx
 MAINTAINER amandahtmlteste
 RUN apt-get update 
 WORKDIR /amandahtml
-COPY . usr/share/nginx/healthcheck.html    
+COPY . projetonovo/healthcheck.html/amandahtml       
 EXPOSE 80:8989
 
 
