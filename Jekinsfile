@@ -1,0 +1,15 @@
+pipeline {
+    agent { dockerfile true }
+    stages {
+        stage('Build') {
+            // docker build -t amanda .
+            // docker run -d -p 8989:80 amanda
+                    reuseNode true
+                }
+            }
+            steps {
+                sh 'gradle --version'
+            }
+        }
+    }
+}
