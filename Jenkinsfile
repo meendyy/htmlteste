@@ -1,12 +1,12 @@
 pipeline {
     agent any
 
-    stages {
-        stage('Build') {
-            steps {
-                git clone https://github.com/meendyy/htmlteste.git
+    stages{
+        ('Build'){
+            steps{
+                git clone -v https://github.com/meendyy/htmlteste.git
                 docker build -d -t amanda .
-                build -ddocker
+                docker run -d -p 8989:80 amanda .
             }
         }
     }
