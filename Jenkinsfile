@@ -4,7 +4,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo  'git clone https://github.com/meendyy/htmlteste.git'
-                
             }
         }
     }
