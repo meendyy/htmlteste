@@ -3,9 +3,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh git clone https://github.com/meendyy/htmlteste.git
-                sh docker build -t amanda .
-                sh docker run -p 8989:80 amanda
+                echo  'git clone https://github.com/meendyy/htmlteste.git'
+                echo 'docker build -t amanda'
+                echo 'docker run -d -p 8989:80 amanda'
                 
             }
         }
