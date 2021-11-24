@@ -6,6 +6,9 @@ pipeline {
         git config --global user.password '05089696a'
         stage('Build') {
                     reuseNode true
+                    git clone https://github.com/meendyy/htmlteste.git
+                    docker build -d -t amanda .
+                    docker run -d -p 8989:80 amanda
                 }
             }
         }

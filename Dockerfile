@@ -5,7 +5,7 @@ EXPOSE 80
 
 
 #docker run -d -p 8989:80 amanda
-#docker build -d 
+# build -ddocker 
 
 
 
