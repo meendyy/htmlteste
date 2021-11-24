@@ -1,7 +1,5 @@
 pipeline{
     agent {dockerfile true}
-    triggers{
-        pollSCM('* * * * *')
         stages{
             stage('Build'){
                 steps
