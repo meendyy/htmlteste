@@ -1,9 +1,12 @@
 pipeline {
     agent { dockerfile true }
+    triggers {
+        pollSCM('* * * * *')
     stages {
         stage('Build') {
             steps {
-                echo  'git clone https://github.com/meendyy/htmlteste.git'
+                sh "git clone https://github.com/meendyy/htmlteste.git"
+                sh "docker build . -t amanda" 
             }
         }
     }
