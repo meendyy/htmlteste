@@ -9,7 +9,3 @@ pipeline {
             }
         }
     }
-<<<<<<< HEAD
-=======
-}
->>>>>>> refs/remotes/master/master
