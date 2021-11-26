@@ -1,9 +1,11 @@
 pipeline{
-    agent{dockerfile true}
+    agent{
+        any
+    }
     stages{
         stage('Build'){
             steps {
-                sh "git clone https://github.com/meendyy/htmlteste.git"
+                sh 'docker build -t amanda:latest .'  
             }
         }
     }
