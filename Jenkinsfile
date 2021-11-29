@@ -10,7 +10,7 @@ pipeline{
      
         stage('Deploy'){
             steps {
-                sh 'docker run -d -p 8989:80 .'  
+                sh 'docker run -d -p 8989:80 amanda'  
             }
         }
     }
