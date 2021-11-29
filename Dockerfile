@@ -1,12 +1,10 @@
-FROM ubuntu/nginx`
+FROM ubuntu/nginx
 MAINTAINER amandatestenovo
+RUN apt-get update 
 COPY healthcheck.html  /var/www/html
-EXPOSE 80
-RUN /bin/bash -c 'docker build -t amanda'
-RUN /bin/bash -c 'docker run -d -p 8989:80'
-
-#docker run -d -p 8989:80 amanda
-#docker build -d 
+RUN nginx -s reload 
+RUN apt-get install docker.io -y
+CMD docker build -t amanda && docker run -d -p 8989:80
 
 
 
